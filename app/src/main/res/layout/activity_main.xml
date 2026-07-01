@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk66"
+
+    tools:context="com.melodifyverse.nancyajram.MainActivity">
+
+    <!-- MAIN CONTENT -->
+    <RelativeLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- TOP BAR -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/relativelayoutcolor">
+
+                <ImageButton
+                    android:id="@+id/backbutton2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/left_arrow"/>
+
+                <TextView
+                    android:id="@+id/Main_songs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/list_of_songs"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alexandria_font"/>
+            </RelativeLayout>
+
+            <!-- SEARCH -->
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="@string/search_hint"
+                android:textColor="@android:color/white"
+                android:textColorHint="#88FFFFFF"
+                android:padding="16dp"
+                android:visibility="gone"/>
+
+            <!-- LIST -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/news_rv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="90dp"
+                android:clipToPadding="false"
+                android:background="#1AFFFFFF"
+                tools:listitem="@layout/item_songs"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!-- FLOATING GLASS NOW PLAYING + NAV BAR -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/now_playing_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="14dp"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/glass_now_playing"
+            android:padding="12dp">
+            <!-- ================= NOW PLAYING ================= -->
+            <RelativeLayout
+                android:id="@+id/now_playing_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/mini_player_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/shape4"
+                    android:padding="8dp">
+
+                    <!-- Song Image -->
+                    <ImageView
+                        android:id="@+id/img_artist"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/roundcorner"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        android:src="@drawable/icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <!-- Song Title -->
+                    <TextView
+                        android:id="@+id/txt_song_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Song name"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@id/img_artist"
+                        app:layout_constraintEnd_toStartOf="@id/btn_mini_play"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <!-- Play / Pause -->
+                    <ImageView
+                        android:id="@+id/btn_mini_play"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/play__1_"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+
+
+            <!-- ================= DIVIDER ================= -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="6dp"
+                android:background="#22FFFFFF"/>
+
+            <!-- ================= GLASS NAV BAR ================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- FAVORITE -->
+                <ImageView
+                    android:id="@+id/btn_favorite"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="32dp"
+                    android:src="@drawable/favorite"
+                    app:tint="#ADB12525"/>
+
+                <!-- SEARCH -->
+                <ImageView
+                    android:id="@+id/btn_search"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_search_24"
+                    app:tint="@color/white"/>
+
+                <!-- AWARD -->
+                <ImageView
+                    android:id="@+id/btn_award"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_award"
+                    app:tint="@android:color/white"/>
+
+                <!-- TIMER -->
+                <ImageView
+                    android:id="@+id/btn_timer"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_timer"
+                    app:tint="#B4FFEB3B"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/glass_dialog">
+
+
+
+<TextView
+        android:id="@+id/tv_timer_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="+2 minutes"/>
+
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="+5 minutes"/>
+
+    <Button
+        android:id="@+id/btn_10"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="+10 minutes"/>
+
+    <Button
+        android:id="@+id/btn_cancel_timer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Cancel"/>
+
+</LinearLayout>

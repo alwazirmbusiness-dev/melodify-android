@@ -1,0 +1,40 @@
+<resources>
+
+        <string name="app_name">اغاني ترند 2026</string>
+
+    <string name="shareTxt">اغاني ترند بدون نت 2026</string>
+
+    <string name="admobID">ca-app-pub-4227875421273137~5225760184</string>
+
+    <string name="admob_interstitial">ca-app-pub-4227875421273137/6965345121</string>
+
+    <string name="admob_rewarded">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="ONESIGNAL_APP_ID"></string>
+
+    <string name="marketAccount">https://play.google.com/store/apps/dev?id=6213065199384528786</string>
+
+    <string name="provicyPolicy">https://sites.google.com/view/melodifyverse/home?pli=1</string>
+
+    <string name="rate_the_app">https://play.google.com/store/apps/details?id=com.melodifyverse.nancyajram</string>
+
+    <string name="getanotherapp">https://play.google.com/store/apps/details?id=com.melodifyverse.saamara</string>
+
+    <string name="share">مشاركة</string>
+    <string name="search_hint">ابحث هنا عن ما تريد سماعه</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="total_duration">0:00</string>
+    <string name="tv_song_current_duration">0:00</string>
+    <string name="moreapps">المزيد من تطبيقاتنا</string>
+    <string name="fav">قائمتي المفضلة</string>
+    <string name="line_of_time">/</string>
+    <string name="list_of_songs_menu">أبدا الاستماع</string>
+    <string name="list_of_songs">Playlist Trend Songs</string>
+    <string name="other_app_text">انقر هنا وحمل تطبيق لاجمل اغاني سمارا الحصرية لعام 2026 بدون نت 🔥</string>
+    <string name="artist_name">Top Trend</string>
+    <string name="ratetheapp">قيمنا + تعليق</string>
+    <string name="loading_ad">Ad is loading .. plz wait</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

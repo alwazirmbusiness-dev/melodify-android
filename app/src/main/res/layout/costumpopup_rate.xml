@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="290dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="#0c000000"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape5">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="170dp"
+            android:background="@drawable/pop"
+            app:shapeAppearanceOverlay="@style/SpecificCornerRounded"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtclose"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="300dp"
+                android:gravity="center"
+                android:text="X"
+                android:fontFamily="@font/alexandria_font"
+                android:textColor="@color/colorDarkOrange"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-8dp"
+                android:background="@drawable/iconic">>
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/alexandria_font"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorDarkOrange"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/More_Apps"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape4">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/apps" />
+
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/alexandria_font"
+                android:gravity="center"
+                android:text="المزيد"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_rate"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/More_Apps"
+            android:background="@drawable/shape4">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/star_rating" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:text="قيمنا"
+                android:fontFamily="@font/alexandria_font"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/privacy_1"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape4">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/privacyicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:text="Privacy"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/share_app"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/privacy_1"
+            android:background="@drawable/shape4">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shareicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:text="المشاركه"
+                android:fontFamily="@font/alexandria_font"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/okBu"
+            android:layout_width="156dp"
+            android:layout_height="144dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/star_rating"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/okBu2"
+            android:layout_width="163dp"
+            android:layout_height="152dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/apps"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

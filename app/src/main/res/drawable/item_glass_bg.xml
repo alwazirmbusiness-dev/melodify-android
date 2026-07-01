@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:radius="18dp"/>
+
+    <!-- Glassy background -->
+    <gradient
+        android:type="radial"
+        android:gradientRadius="300dp"
+        android:centerX="0.5"
+        android:centerY="0.3"
+        android:startColor="#E01D1818"
+        android:centerColor="#99000000"
+        android:endColor="#00000000"/>
+
+    <!-- Subtle glass border -->
+    <stroke
+        android:width="1.5dp"
+        android:color="#100E0E"/>
+
+</shape>

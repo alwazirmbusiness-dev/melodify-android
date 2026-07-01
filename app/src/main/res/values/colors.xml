@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#000000</color>
+
+    <color name="colorPrimaryDark">#000000</color>
+
+    <color name="seekBar">#000000</color>
+
+    <color name="black">#000000</color>
+
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorGrey">#000000</color>
+
+    <color name="colorYellow">#FF9800</color>
+
+    <color name="colorDarkOrange">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="white2">#FFFFFF</color>
+
+    <color name="dialog">#000000</color>
+
+    <color name="xbutton">#274C49</color>
+
+    <color name="dialo_button">#000000</color>
+
+    <color name="ColorMenu">#ecf0f1</color>
+
+    <color name="colorNotif">#2980b9</color>
+
+    <color name="gradiant">#FA070313</color>
+
+    <color name="your_color">#D83F384A</color>
+    <color name="your_color2">#003F384A</color>
+    <color name="red">#FF5722</color>
+
+    <color name="boottom">#1D392E</color>
+
+
+
+
+
+</resources>
