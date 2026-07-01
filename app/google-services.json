@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "196541376046",
-    "project_id": "nancyajram-d8c53",
+    "project_number": "############",
+    "project_id": "############",
     "storage_bucket": "nancyajram-d8c53.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:196541376046:android:386675b20812576a5b21bf",
+        "mobilesdk_app_id": "########################################",
         "android_client_info": {
           "package_name": "com.melodifyverse.nancyajram"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCdtzlEu0NNT9FTXKO56MR7oH4qiS1NJuY"
+          "current_key": "####################################Y"
         }
       ],
       "services": {
